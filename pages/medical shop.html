@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            online pharmacy.com
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            body{
+                background-image: url('../img/bg-5.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            ::-webkit-input-placeholder {
+  color: black;
+  font-size: 20px;
+  padding-left: 5px;
+  
+}
+h2{
+    font-size: 40px;
+   margin-right: 10px
+    
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+ 
+ 
+
+}
+
+
+.row {
+    border: 1px solid black;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 120px;
+ 
+ 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+        </style>
+        
+    </head>
+    <body>
+
+      <nav>
+        <label class="logo"><a href="../index.html">Online Pharmacy</a></label>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About us</a></li>
+          
+            <li><a href="contact.html">Contact</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Available Products<i class="fa fa-c"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#avalpro">Horlicks</a>
+                <a href="#avalpro">Aloevera gel</a>
+                <a href="#avalpro">Diaper</a>
+                <a href="#avalpro">Dabur Honey</a>
+                <a href="#avalpro">Baby Powder </a>
+              </div>
+            <!--<li><a href="#avalpro">Available products</a></li>-->
+            <li><a href="sign up.html" class="signlink">SignUp</a></li>
+        </ul>
+        
+        
+    </nav>
+
+
+        <div class="form">
+            <form action="../index.html">
+              
+            <div class="row">
+              <h3 style="text-align: center; margin-top: 10px; font-size: 25px;  color:	#000080;">Order medicines </h3>
+                <div class="column">
+                    <label><b>Name</b></label><br>
+                    <input type="text" name="name" placeholder="John" pattern="[A-Za-z]{2,32}" 
+                    required ><br><br>
+                    <br><label><b>Email</b></label>  <br>
+                    <input type="email"placeholder="abc13@gmail.com" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                    <label><b> Contact number</b></label><br>
+                    <input type="tel" name="Contact number" placeholder="9041265418" pattern="[7-9][0-9]{9}" required><br><br>
+                    <label><b>Age</b></label><br>
+                    <input type="age"  name="age" max="100" min="18" placeholder="31"><br><br>
+                    <label><b>Gender</b></label><br>
+                   
+                    <input type="radio" id="Male" name="gender" class="gen" value="male" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="Female" name="gender" class="gen"  value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="gender" class="gen" value="others">
+                    <label for="others">Others</label> <BR><br>
+                </div>
+                <div class="column">
+                    <label for="start"><b>Date:</b></label><br>
+                    <input type="date" id="start" name="trip-start"
+                            min="2021-01-01" max="2022-12-31"><br><br>
+
+                            <label><b>Blood group :</b></label><br>
+
+                            <select name="Blood" id="bgroup" class="gen">
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</B-></option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                
+                
+                              </select>
+                              <br>
+                              <br><br>
+                              <label><b>Address</b></label><br>
+                              <input class="gen" type="address" name="address" placeholder="27,Anna nagar,trichy,621 215" required><br><br>
+                              <br><label><b>Uplode your prescription</b></label><br>
+                              <input class="gen" type="file" name="File" required><br><br>
+                              <label><b>Message</b></label><br>
+                              <textarea rows="5" cols="68"></textarea>
+                </div>
+                <input type="submit"   class="button"  onclick=myalart() Submit>
+            </div>
+            
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script>
+            function myalart() {
+              alert("your detaits has submitted! your order will be delivered within two days");
+            }
+         </script>
+    
+    </body>
+</html>

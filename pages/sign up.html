@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            sign up
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            body{
+                background-image: url('../img/bg_sign.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+    
+        </style>
+    </head>
+    <body>
+        <nav>
+            <label class="logo"><a href="../index.html">Online Pharmacy</a></label>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About us</a></li>
+              
+                <li><a href="contact.html">Contact</a></li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Available Products<i class="fa fa-c"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#avalpro">Horlicks</a>
+                    <a href="#avalpro">Aloevera gel</a>
+                    <a href="#avalpro">Diaper</a>
+                    <a href="#avalpro">Dabur Honey</a>
+                    <a href="#avalpro">Baby Powder </a>
+                  </div>
+                <!--<li><a href="#avalpro">Available products</a></li>-->
+                <li><a href="#" class="signlink">SignUp</a></li>
+            </ul>
+            
+            
+        </nav>
+        <div class="signlog">
+            
+            <div class="slog">
+                <form action="../index.html">
+              <h2>Sign up</h2><br>
+              <br>
+              <label for="name">Username</label><br>
+              <input type="name" class="name" placeholder="Username" pattern="[a-zA-z0-9.$_]{5,15}"  title="Username should contain 5-15 characters"  required><br><br>
+              <br><label for="email">Email</label>  <br>
+              <input type="email" class=email placeholder="abc13@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+              <br><label for="psw"><b>Password</b></label><br>
+              <input type="password" placeholder="Enter Password" name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="20"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and
+              at least 8 or more characters"  required><br><br>
+              
+        <label for="psw"><b>Confirm Password</b></label><br>
+              <input type="password" placeholder="Enter Password" name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="20"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and
+              at least 8 or more characters"  required><br><br>
+              <br>
+            <input type="submit" value="sign up">
+                </form>
+            </div>
+        </div>
+      
+        
+        
+    
+    </body>
+</html>
